@@ -100,7 +100,7 @@ select * from test_table;
 2) Код Terraform, создающий базу данных.
 
 
-```
+```terraform
 terraform {
   required_providers {
     yandex = {
