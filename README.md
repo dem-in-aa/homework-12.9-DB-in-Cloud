@@ -38,11 +38,11 @@
 ![](img/7.png)
 
 * Проверьте, что подключение прошло к master-узлу.
-```
+```sql
 select case when pg_is_in_recovery() then 'REPLICA' else 'MASTER' end;
 ```
 * Посмотрите количество подключенных реплик:
-```
+```sql
 select count(*) from pg_stat_replication;
 ```
 ![](img/8.png)
@@ -85,7 +85,7 @@ select * from test_table;
 *В качестве результата вашей работы пришлите скриншоты:*
 
 *1) Созданной базы данных;*
-*2) Результата вывода команды на реплике ```select * from test_table;```.*
+*2) Результата вывода команды на реплике ```select * from test_table;```*
 
 ![](img/10.png)
 ---
